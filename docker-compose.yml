@@ -21,7 +21,7 @@ services:
     volumes:
       - ./backend/:/home/
     working_dir: /home
-    command: bash -c "apt-get update && apt-get install vim -y && pip install --upgrade pip && pip install fastapi && pip install uvicorn && pip install pandas && pip install numpy && pip install psycopg2-binary && pip install pymysql && pip install sqlalchemy && pip install openpyxl && pip install jupyter && pip install konlpy && apt install default-jdk -y && pip install scikit-learn && python main.py && tail -f /dev/null"
+    command: bash -c "apt-get update && apt-get install vim -y && pip install --upgrade pip && pip install fastapi && pip install uvicorn && pip install pandas && pip install numpy && pip install psycopg2-binary && pip install pymysql && pip install sqlalchemy && pip install openpyxl && pip install jupyter && pip install konlpy && apt install default-jdk -y && pip install scikit-learn && python db_init.py && python main.py && tail -f /dev/null"
     depends_on:
       - db
 
