@@ -1,0 +1,11 @@
+.DS_Store
+data/**
+db/**
+!db/init
+!db/init/db_create_sequence.sql
+!db/.env
+!data/lecture_info_df.zip
+crawl_everytime/.ipynb_checkpoints/
+__pycache__
+.ipynb_checkpoints
+frontend/**
