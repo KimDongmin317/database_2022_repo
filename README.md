@@ -1,2 +1,2 @@
 # database_2022_repo
-test readme!
+서울과학기술대학교 데이터베이스 팀프로젝트
